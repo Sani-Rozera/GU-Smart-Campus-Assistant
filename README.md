@@ -36,5 +36,6 @@ streamlit run app.py
 - What B.Tech specializations are offered?
 - What hostel facilities are available?
 
+You can access this by the following link: https://gu-smart-campus-assistant-fkyrocqeqozwjns5fzmpm2.streamlit.app/
 ---
-Developed by **Sani Rozera**
+Developed by **Sani Devi**
