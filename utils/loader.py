@@ -14,8 +14,18 @@ def load_documents():
 
             pdf_path = os.path.join(data_folder, file)
 
-            loader = PyPDFLoader(pdf_path)
+            try:
+                print(f"Loading: {file}")
 
-            documents.extend(loader.load())
+                loader = PyPDFLoader(pdf_path)
+                docs = loader.load()
+
+                print(f"Loaded successfully: {file}")
+
+                documents.extend(docs)
+
+            except Exception as e:
+                print(f"Failed to load {file}")
+                print(e)
 
     return documents
